@@ -2,4 +2,4 @@ The software that provides the _New Package Tracker_ is located at: https://trac
 
 The tracker is a python web application based on [Roundup](http://roundup.sourceforge.net/). Its source is in [SourceForge](http://hg.code.sf.net/u/dtenenba/roundup-bioc) (as a Mercurial repository) and [in GitHub](https://github.com/dtenenba/bioc_submit). 
 
-For information on the package review process, see [[Reviewing New Packages]].
+For information on the package review process, see [Reviewing New Packages](Reviewing-New-Packages.md).
