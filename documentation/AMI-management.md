@@ -8,7 +8,7 @@ Since our AMI's include Rstudio, it's important to follow these steps before cre
 your image :
 ```shell
 # Stop the rstudio service
-service rstudio-server stop
+sudo service rstudio-server stop
 # Since this doesn't stop all processes, find the remaining rstudio PID
 ubuntu@ip-172-30-0-92:~$ sudo ps -ef |grep -i rstudio
 sudo: unable to resolve host ip-172-30-0-92
