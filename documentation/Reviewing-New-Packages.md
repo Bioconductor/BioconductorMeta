@@ -9,4 +9,4 @@ Additionally, package reviewers should perform the following steps when reviewin
     * Experiment Data
     * Annotation
 
-For information about the software that powers https://tracker.bioconductor.org, see [[New Package Tracker]].
+For information about the software that powers https://tracker.bioconductor.org, see [New Package Tracker](New-Package-Tracker.md).
