@@ -17,7 +17,7 @@ ubuntu    1531  1476  0 15:09 pts/0    00:00:00 grep --color=auto -i rstudio
 # Kill the rstudio rsession
 kill 1500
 # Remove the ~/.rstudio directory and the ~/.Rhistory file
-rm -rf .rstudio/ .Rhistory
+rm -rf ~/.rstudio/ ~/.Rhistory
 ```
 Next, shutdown the instance:
 ```
