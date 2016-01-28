@@ -1,5 +1,10 @@
-The following list (which may be incomplete) is a collection of infrastructure components that make up  Bioconductor infrastructure:
+The following list (which may be incomplete) is a collection of components that make up Bioconductor infrastructure:
 
+#### Accounts
+- https://github.com/bioc-sync
+- https://github.com/bioconductor-bot
+
+#### Repositories
 - [Bioconductor Build System](https://github.com/bioconductor/BBS/)
 - https://github.com/Bioconductor/bioc-cm
 - https://github.com/Bioconductor/bioc_docker
