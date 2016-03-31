@@ -105,9 +105,6 @@ BOOSTLIB = c:/boost_1-57
 JAGS_ROOT = c:/progra~1/JAGS/JAGS-4.2.0
 ```
 
-<!--
-GTK_PATH = c:/GTK2_2~1.1
--->
 
 
 ### Protocol Buffers
@@ -133,7 +130,6 @@ cp -r lib/x64/* x64/lib/
 LIB_PROTOBUF = C:/protobuf-2.6.1-newtoolchain
 ```
 
- <!-- PG_HOME -->
 
 ### NLopt
 
