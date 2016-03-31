@@ -67,7 +67,7 @@ page maintained by Brian Ripley.
 * Unzip it into `c:\local323`.
 * Download [spatial324.zip](http://www.stats.ox.ac.uk/pub/Rtools/goodies/multilib/spatial324.zip)
 * Also unzip it into `c:\local323`.
-* Add the following lines to **both** Makeconf files:
+* Add the following lines to **both** Makeconf files (or **modify** the these settings if they already exist):
 
 ```
 LOCAL_SOFT = c:/local323
