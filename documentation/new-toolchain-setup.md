@@ -168,7 +168,48 @@ We hope to have these resolved the week of April 4.
 
 ## Packages that still do not install
 
-#### mzR
+
+
+
+#### affxparser
+
+Not sure, maintainer needs to look at it.
+
+## [BioNet](https://bioconductor.org/checkResults/devel/bioc-LATEST/BioNet/moscato2-buildsrc.html), BiRewire, caOmicsV, etc.
+
+Seems to be an issue in igraph (a CRAN package)
+Filed [an issue](https://github.com/igraph/igraph/issues/937) about it.
+
+### CNVrd2
+
+Depends on rjags which compiles but test load (on i386 only) crashes R.
+Contacted rjags maintainer.
+
+### GeneNetworkBuilder (and others)
+
+R crashes (not visible in build report)
+
+### MSGFplus
+
+Probably not related to toolchain. Also updated java recently. Although the correct java is in the path:
+
+```
+E:\biocbld>where java
+C:\Program Files\Java\jre1.8.0_77\bin\java.exe
+C:\Windows\System32\java.exe
+```
+
+...the first one is not picked up in R:
+
+```
+> Sys.which("java")
+                             java
+"C:\\Windows\\system32\\java.exe"
+```
+
+Not sure why.
+
+### mzR
 
 Updated the embedded libnetcdf.a files. Also need to update libpwiz.a.
 Seems like running `make -f Makefile.libpwiz` in `mzR\src` does this,
@@ -176,12 +217,25 @@ but I am not sure if the resulting .a file is for i386 or x64, or
 how to build the other sub-architecture. Need to ask maintainer.
 See [this question](https://github.com/sneumann/mzR/issues/21#issuecomment-203683171).
 
+### plrs
 
-#### affxparser
+CRAN package Rcsdp cannot be installed:
 
-Not sure, maintainer needs to look at it.
+```
+C:/Rtools/mingw_64/bin/gcc -shared -s -static-libgcc -o Rcsdp.dll tmp.def Rcsdp.o convert.
+o testing.o -LCsdp/lib -lsdp -Le:/biocbld/BBS-3~1.3-B/R/bin/x64 -lRlapack -Le:/biocbld/BBS
+-3~1.3-B/R/bin/x64 -lRblas -lgfortran -lm -lquadmath -lm -Lc:/local323/lib/x64 -Lc:/local3
+23/lib -Le:/biocbld/BBS-3~1.3-B/R/bin/x64 -lR
+Csdp/lib/libsdp.a: error adding symbols: Archive has no index; run ranlib to add one
+collect2.exe: error: ld returned 1 exit status
+no DLL was created
+```
 
-### Rhtslib (affects csaw and deepSNV)
+### Rdisop
+
+Not sure, perhaps an issue with RcppClassic.
+
+### Rhtslib (affects bamsignals, csaw and deepSNV)
 
 Rhtslib actually installs OK but (we think) the static htslib libraries
 inside it need to be rebuilt after commenting out
@@ -191,3 +245,10 @@ inside it need to be rebuilt after commenting out
 
 Seems to be using a non-standard Makefile. It needs to   be updated to use the `BINPREF` make variable to find the appropriate compiler.
 Tried  commenting out the CC and CXX > variables but that didn't work.
+
+
+### xps
+
+Not sure, maybe need to rebuild ROOT? 
+
+
