@@ -110,7 +110,9 @@ BOOSTLIB = c:/boost_1-57
 
 ### JAGS
 
-* Install [JAGS-4.2.0.exe](https://sourceforge.net/projects/mcmc-jags/files/JAGS/4.x/Windows/)
+* Install [JAGS-4.2.0.exe](
+https://sourceforge.net/projects/mcmc-jags/files/JAGS/4.x/Windows/JAGS-4.2.0-Rtools33.exe/download)
+  (this is a special version built for the new toolchain)
 * Add the following to **both** Makeconf files:
 
 ```
@@ -186,12 +188,6 @@ We hope to have these resolved the week of April 4.
 #### affxparser
 
 Not sure, maintainer needs to look at it.
-
-
-### CNVrd2
-
-Depends on rjags which compiles but test load (on i386 only) crashes R.
-Contacted rjags maintainer. There is a new JAGS built against the new toolchain, just need to install it....
 
 ### GeneNetworkBuilder (and others)
 
