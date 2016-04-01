@@ -178,7 +178,7 @@ Not sure, maintainer needs to look at it.
 ## [BioNet](https://bioconductor.org/checkResults/devel/bioc-LATEST/BioNet/moscato2-buildsrc.html), BiRewire, caOmicsV, etc.
 
 Seems to be an issue in igraph (a CRAN package)
-Filed [an issue](https://github.com/igraph/igraph/issues/937) about it.
+Filed [an issue](https://github.com/igraph/rigraph/issues/148) about it.
 
 ### CNVrd2
 
