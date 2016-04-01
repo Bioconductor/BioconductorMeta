@@ -56,6 +56,18 @@ modify both files*. The instructions below will discuss how to install each syst
 dependency, as well as the entries you need to make or change in the `Makeconf`
 files.
 
+### `NM_FILTER`
+
+Make sure the `NM_FILTER` line in `etc/$R_HOME/Makeconf` looks like this:
+
+```
+NM_FILTER = | sed -e '/\.refptr\./d' -e '/\.weak\./d'
+```
+
+Otherwise packages that use igraph may fail. See [here](https://github.com/RcppCore/Rcpp/issues/442#issuecomment-190848342)
+for background.
+
+
 ### Local Tree
 
 The headers and libraries for a number of system dependencies
@@ -175,15 +187,11 @@ We hope to have these resolved the week of April 4.
 
 Not sure, maintainer needs to look at it.
 
-## [BioNet](https://bioconductor.org/checkResults/devel/bioc-LATEST/BioNet/moscato2-buildsrc.html), BiRewire, caOmicsV, etc.
-
-Seems to be an issue in igraph (a CRAN package)
-Filed [an issue](https://github.com/igraph/rigraph/issues/148) about it.
 
 ### CNVrd2
 
 Depends on rjags which compiles but test load (on i386 only) crashes R.
-Contacted rjags maintainer.
+Contacted rjags maintainer. There is a new JAGS built against the new toolchain, just need to install it....
 
 ### GeneNetworkBuilder (and others)
 
