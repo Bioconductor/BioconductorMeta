@@ -238,7 +238,7 @@ no DLL was created
 
 ### Rdisop
 
-Not sure, perhaps an issue with RcppClassic.
+Solved by installing RcppClassic **without** the `--merge-multiarch` flag.
 
 ### Rhtslib (affects bamsignals, csaw and deepSNV)
 
