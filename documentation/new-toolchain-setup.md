@@ -194,26 +194,6 @@ Issue is being tracked [here](https://github.com/HenrikBengtsson/affxparser/issu
 
 R crashes (not visible in build report)
 
-### MSGFplus
-
-Probably not related to toolchain. Also updated java recently. Although the correct java is in the path:
-
-```
-E:\biocbld>where java
-C:\Program Files\Java\jre1.8.0_77\bin\java.exe
-C:\Windows\System32\java.exe
-```
-
-...the first one is not picked up in R:
-
-```
-> Sys.which("java")
-                             java
-"C:\\Windows\\system32\\java.exe"
-```
-
-Not sure why.
-
 ### mzR
 
 Updated the embedded libnetcdf.a files. Also need to update libpwiz.a.
