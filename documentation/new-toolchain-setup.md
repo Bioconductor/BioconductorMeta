@@ -255,5 +255,7 @@ Tried  commenting out the CC and CXX > variables but that didn't work.
 ### xps
 
 Not sure, maybe need to rebuild ROOT? 
+(Package has been marked as unsupported on Windows at the request of the maintainer; building ROOT from source
+using the toolchain is a massive undertaking.)
 
 
