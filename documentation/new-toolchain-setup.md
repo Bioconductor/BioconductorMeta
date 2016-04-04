@@ -174,7 +174,6 @@ We hope to have these resolved the week of April 4.
 * Gtk2
 * ggobi
 * MPI
-* OpenBabel
 
 ## Changes made to packages to faciliate installation
 
