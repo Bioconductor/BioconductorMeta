@@ -182,14 +182,6 @@ We hope to have these resolved the week of April 4.
 
 ## Packages that still do not install
 
-
-
-
-#### affxparser
-
-Not sure, maintainer needs to look at it.
-Issue is being tracked [here](https://github.com/HenrikBengtsson/affxparser/issues/22).
-
 ### GeneNetworkBuilder (and others)
 
 R crashes (not visible in build report)
