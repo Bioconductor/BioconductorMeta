@@ -42,6 +42,20 @@ options(pkgType="source")
   package installs (since the binaries currently available were built
   with the old toolchain).
 
+* In **both** `Makeconf` files (`etc/i386/Makeconf` and `etc/x64/Makeconf`) change
+  this line:
+
+```
+BINPREF ?= c:/Rtools/mingw_32/bin/
+```
+
+to
+
+```
+BINPREF = c:/Rtools/mingw_32/bin/
+```
+
+In other words, just remove the `?`.
 
 ## Setting up system Dependencies
 
