@@ -217,9 +217,9 @@ We hope to have these resolved the week of April 4.
 
 ## Packages that still do not install
 
-### GeneNetworkBuilder (and others)
+### flowClust, flowPeaks, GeneNetworkBuilder (and others)
 
-R crashes (not visible in build report)
+R crashes (not visible in build report). Maintainers have been notified.
 
 ### mzR
 
@@ -242,6 +242,7 @@ Csdp/lib/libsdp.a: error adding symbols: Archive has no index; run ranlib to add
 collect2.exe: error: ld returned 1 exit status
 no DLL was created
 ```
+...its maintainer has been contacted.
 
 ### Rdisop
 
@@ -253,14 +254,6 @@ Rhtslib actually installs OK but (we think) the static htslib libraries
 inside it need to be rebuilt after commenting out
 [this line](https://github.com/Bioconductor-mirror/Rhtslib/blame/master/src/htslib/sam.c#L1078).
 
-### Rbowtie
+Solved 4/7/2016 - watch this space for a link to the process of how it was done. Commenting out the line 
+referenced above was not necessary, BTW, just rebuilding htslib under the new toolchain.
 
-Seems to be using a non-standard Makefile. It needs to   be updated to use the `BINPREF` make variable to find the appropriate compiler.
-Tried  commenting out the CC and CXX > variables but that didn't work.
-
-
-### xps
-
-Not sure, maybe need to rebuild ROOT?
-(Package has been marked as unsupported on Windows at the request of the maintainer; building ROOT from source
-using the toolchain is a massive undertaking.)
