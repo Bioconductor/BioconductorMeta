@@ -203,12 +203,37 @@ mv x86 i386
 MPI_HOME = C:/Program Files (x86)/Microsoft SDKs/MPI
 ```
 
+### Gtk+ aka Gtk2
+
+* Create directories:
+
+```
+c:
+cd \
+mkdir -p gtk+2.2.0\i386 gtk+2.2.0\x64
+```
+
+* Download [gtk+-bundle_2.22.0-20101016_win32.zip](http://ftp.gnome.org/pub/gnome/binaries/win32/gtk+/2.22/gtk+-bundle_2.22.0-20101016_win32.zip)
+* Unzip it in `C:/gtk+2.2.0/i386`
+* Download [gtk+-bundle_2.22.0-20101016_win64.zip](http://ftp.gnome.org/pub/gnome/binaries/win64/gtk+/2.22/gtk+-bundle_2.22.0-20101016_win64.zip)
+* Unzip it in `C:/gtk+2.2.0/x64`
+* Modify `etc/i386/Makeconf` to have this line:
+
+```
+GTK_PATH = C:/gtk+2.2.0/i386
+```
+
+* Modify `etc/x64/Makeconf` to have this line:
+
+```
+GTK_PATH = C:/gtk+2.2.0/x64
+```
+
 
 ### System Dependencies not yet updated
 
 We hope to have these resolved the week of April 4.
 
-* Gtk2
 * ggobi
 
 ## Changes made to packages to faciliate installation
