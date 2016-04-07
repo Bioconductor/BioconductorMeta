@@ -254,6 +254,9 @@ but I am not sure if the resulting .a file is for i386 or x64, or
 how to build the other sub-architecture. Need to ask maintainer.
 See [this question](https://github.com/sneumann/mzR/issues/21#issuecomment-203683171).
 
+**Update**: Looks like the mzR maintainers are tracking this issue
+[here](https://github.com/sneumann/mzR/issues/36).
+
 ### plrs
 
 CRAN package Rcsdp cannot be installed:
