@@ -24,6 +24,7 @@ must also be rebuilt, and many of them have--see below for pointers to them.
 * [Results of unofficial CRAN builds on new toolchain](https://docs.google.com/spreadsheets/d/1XNcw0NexzVkwc4uiZoqJKgxPoO4ZGlXtw6jHr1FAaf4/edit?usp=sharing) (from Jim Hester)
 * [Third-Party Software for CRAN on Windows](https://cran.r-project.org/bin/windows/contrib/ThirdPartySoftware.html) (variables that need to be set in $R_ARCH\\Makeconf)
 * [Get a Windows Virtual Machine](https://developer.microsoft.com/en-us/microsoft-edge/tools/vms/
+* [CRAN Windows README](https://cran.r-project.org/bin/windows/contrib/3.3/@ReadMe)
 
 ## Setting up R to use the new Toolchain
 
