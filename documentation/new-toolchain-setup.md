@@ -22,6 +22,7 @@ must also be rebuilt, and many of them have--see below for pointers to them.
 * [Libraries needed to build CRAN packages](http://www.stats.ox.ac.uk/pub/Rtools/libs.html)
 * [New Builds of System Dependencies](http://www.stat.ucla.edu/~jeroen/mingw-w64/libraries/)
 * [Results of unofficial CRAN builds on new toolchain](https://docs.google.com/spreadsheets/d/1XNcw0NexzVkwc4uiZoqJKgxPoO4ZGlXtw6jHr1FAaf4/edit?usp=sharing) (from Jim Hester)
+* [Results of unofficial CRAN builds on new toolchain](https://www.statistik.tu-dortmund.de/~ligges/3.3new/) (from Uwe Ligges)
 * [Third-Party Software for CRAN on Windows](https://cran.r-project.org/bin/windows/contrib/ThirdPartySoftware.html) (variables that need to be set in $R_ARCH\\Makeconf)
 * [Get a Windows Virtual Machine](https://developer.microsoft.com/en-us/microsoft-edge/tools/vms/
 * [CRAN Windows README](https://cran.r-project.org/bin/windows/contrib/3.3/@ReadMe)
