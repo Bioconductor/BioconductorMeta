@@ -104,6 +104,8 @@ NETCDF = c:/local323
 LIB_GSL = c:/local323
 ```
 
+See [note below](#flowclust-flowpeaks) about replacing the `i386` version of `libgsl.a` which seemed to be required for some packages.
+
 ### HDF5
 
 * Clone the [H5 git repository](https://github.com/mpastell/h5-libwin) to
@@ -243,9 +245,16 @@ We hope to have these resolved the week of April 4.
 
 ## Packages that still do not install
 
-### flowClust, flowPeaks, GeneNetworkBuilder (and others)
+### flowClust, flowPeaks
 
 R crashes (not visible in build report). Maintainers have been notified.
+
+It turns out that rebuilding gsl, just for i386, fixes this issue.
+You can replace `c:/local323/lib/i386/libgsl.a` with 
+[this one](https://s3.amazonaws.com/493-toolchain/libgsl.a) 
+```
+
+
 
 ### mzR
 
