@@ -254,7 +254,7 @@ You can replace `c:/local323/lib/i386/libgsl.a` with
 [this one](https://s3.amazonaws.com/493-toolchain/libgsl.a) 
 or build it yourself with the following instructions:
 
-In an msys shell, do this:
+In an msys2 shell, do this:
 
 ```
 
