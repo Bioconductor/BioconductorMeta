@@ -9,7 +9,7 @@ CRAN is not building Windows binaries packages using the new toolchain. (`bin/co
 to `bin/contrib/wndows/3.3` which contains packages built by the old toolchain).
 
 Bioconductor is going to attempt to build its devel packages against this new toolchain.
-(Note that we will **not** use R-devel for this, we will use R-3.3.0-alpha)
+(Note that we will **not** use R-devel for this, we will use R-3.3.0-beta)
 
 There is a **binary incompatibility** between packages built with the old toolchain and packages
 built with the new one. More precisely, packages are only incompatible if they have C++ code
