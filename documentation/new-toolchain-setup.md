@@ -252,8 +252,22 @@ R crashes (not visible in build report). Maintainers have been notified.
 It turns out that rebuilding gsl, just for i386, fixes this issue.
 You can replace `c:/local323/lib/i386/libgsl.a` with 
 [this one](https://s3.amazonaws.com/493-toolchain/libgsl.a) 
+or build it yourself with the following instructions:
+
+In an msys shell, do this:
+
 ```
 
+curl -LO http://mirrors.ocf.berkeley.edu/gnu/gsl/gsl-2.1.tar.gz
+tar zxf gsl-2.1.tar.gz
+cd gsl-2.1
+export CC=/c/Rtools/mingw_32/bin/gcc.exe
+export AR=/c/Rtools/mingw_32/bin/ar.exe
+export RANLIB=/c/Rtools/mingw_32/bin/ranlib.exe
+./configure
+make
+cp .libs/libgsl.a /c/local323/lib/i386/
+```
 
 
 ### mzR
