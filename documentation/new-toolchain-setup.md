@@ -4,9 +4,8 @@
 
 If all goes well, R-3.3.0 will be released using a [new toolchain](https://github.com/rwinlib/r-base) based on gcc/g++ 4.9.3.
 
-As of [the last time this document was updated](https://github.com/Bioconductor/Bioconductor/commits/master/documentation/new-toolchain-setup.md),
-CRAN is not building Windows binaries packages using the new toolchain. (`bin/contrib/windows/3.4` is a symlink
-to `bin/contrib/wndows/3.3` which contains packages built by the old toolchain).
+As of April 13, 2016, CRAN is providing binary Windows packages (in `bin/windows/contrib/3.3` on its mirrors) built
+with the new toolchain.
 
 Bioconductor is going to attempt to build its devel packages against this new toolchain.
 (Note that we will **not** use R-devel for this, we will use R-3.3.0-beta)
@@ -40,7 +39,6 @@ must also be rebuilt, and many of them have--see below for pointers to them.
 
 ```
 Sys.setenv(BINPREF = "C:/Rtools/mingw_$(WIN)/bin/")
-options(pkgType="source")
 ```
 
 *  This tells R to use the newer compilers, and disables binary
@@ -60,9 +58,12 @@ to
 BINPREF = c:/Rtools/mingw_32/bin/
 ```
 
-In other words, just remove the `?`.
+In other words, just remove the `?`. (In `etc/x64/Makeconf`, of course, it will say `mingw64`.)
 
 ## Setting up system Dependencies
+
+As of April 13, 2016, you no longer have to build most CRAN packages from source, so some of the 
+instructions below are not necesssary, but they have been left here for reference.
 
 You will need to set up a number of system dependencies, since you have to build
 many common CRAN packages (such as `XML` and `RCurl`) from source, as CRAN
