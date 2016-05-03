@@ -192,7 +192,7 @@ NLOPT_HOME = c:/nlopt/2.4.2
 
 ### MPI
 
-* Download both files (`msmpisdk.msi` and `msmpisdk.msi`) from
+* Download both files (`msmpisdk.msi` and `MSMpiSetup.exe`) from
   [Microsoft's MPI page](https://www.microsoft.com/en-us/download/details.aspx?id=49926)
 * Install both files.
 * Change the layout of Microsoft MPI as follows, to match the Rmpi `Makevars`:
