@@ -35,7 +35,7 @@ must also be rebuilt, and many of them have--see below for pointers to them.
   Make sure your `PATH` **starts** with:
   `c:/Rtools/bin;C:/Rtools/mingw_32/bin;C:/Rtools/mingw_64/bin;`
 * Install [R-3.3.0](https://cran.r-project.org/bin/windows/base/rtest.html)
-  Add the following lines to `$_HOME\etc\Rprofile.site`:
+  Add the following lines to `$R_HOME\etc\Rprofile.site`:
 
 ```
 Sys.setenv(BINPREF = "C:/Rtools/mingw_$(WIN)/bin/")
@@ -312,4 +312,3 @@ inside it need to be rebuilt after commenting out
 
 Solved 4/7/2016 - watch this space for a link to the process of how it was done. Commenting out the line 
 referenced above was not necessary, BTW, just rebuilding htslib under the new toolchain.
-
